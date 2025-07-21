@@ -17,6 +17,7 @@ func goldenSection(f func(float64) float64, a, b, eps float64) (int, float64) {
 
 		if math.Abs(b-a) < eps {
 			xMin = (a + math.Sqrt(b)) / 2
+
 			return
 		}
 
